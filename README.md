@@ -17,11 +17,13 @@ The notebook is divided into five key tasks:
 - Transferability Analysis on DenseNet-121
 
 Models Used
+
 - ResNet-34: Pretrained on ImageNet-1K
 
 - DenseNet-121: Pretrained on ImageNet-1K
 
 Metrics Evaluated
+
 - Top-1 Accuracy
 
 - Top-5 Accuracy
@@ -29,19 +31,23 @@ Metrics Evaluated
 - Attack Success Rate (ASR)
 
 Transferability Study
+
 Task 5 investigates how adversarial examples crafted for ResNet-34 affect DenseNet-121, measuring cross-model transferability.
 
 Dataset
+
 Subset of ImageNet-1K (100 classes × 5 images = 500 total samples)
 
 Images are normalized using ImageNet mean and std. Folder structure follows PyTorch's ImageFolder format.
 
 How to Run
+
 Upload TestDataSet.zip and labels_list.json when prompted.
 
 Run all cells in sequence. Ensure that a GPU runtime is enabled for faster evaluation.
 
 Observations
+
 - ResNet-34 shows higher top-1 accuracy on clean data, but DenseNet-121 achieves better top-5 results.
 
 - FGSM reduces top-1 accuracy by ~30% for both models.
